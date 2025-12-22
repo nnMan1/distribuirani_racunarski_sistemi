@@ -1,0 +1,33 @@
+import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.MessageProperties;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.Channel;
+import java.util.Scanner;
+
+public class Send {
+	
+	private final static String QUEUE_NAME = "task_queue";
+	private static Scanner in = new Scanner(System.in);
+
+	public static void main(String[] argv)  {
+		// TODO Auto-generated method stub
+		
+		ConnectionFactory factory = new ConnectionFactory();
+		factory.setHost("localhost");
+				
+		try(Connection connection = factory.newConnection()){
+			Channel channel = connection.createChannel();
+			channel.queueDeclare(QUEUE_NAME, true, false, false, null);
+			
+			String message = in.next();
+			
+			channel.basicPublish("", QUEUE_NAME, MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes());
+			System.out.println(" [x] Sent '" + message + "'");
+
+		} catch (Exception e) {
+			
+		} 		
+
+	}
+
+}

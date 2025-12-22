@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Main&apos; to &apos;Send&apos;&#x0A;- Original project: &apos;rabbitmq-demo&apos;&#x0A;- Original element: &apos;Main&apos;&#x0A;- Renamed element: &apos;Send&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Main&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;{Main.java[Main" matchStrategy="1" name="Send" qualified="false" references="true" similarDeclarations="false" stamp="1765320006356" textual="false" version="1.0"/>
+</session>
