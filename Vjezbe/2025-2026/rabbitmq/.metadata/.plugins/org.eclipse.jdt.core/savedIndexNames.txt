@@ -1,0 +1,8 @@
+INDEX VERSION 1.134+/home/admin/Desktop/priprema/.metadata/.plugins/org.eclipse.jdt.core
+174695756.index
+3191581507.index
+1865797976.index
+3257669416.index
+900586112.index
+906091431.index
+754849595.index
